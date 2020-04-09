@@ -1,7 +1,7 @@
 ## 中国假期安排
-根据[chinese-calendar](https://github.com/LKI/chinese-calendar)的规则文件把历年假期安排整理成了yaml格式，方便不同语言直接解析使用。
+根据[chinese-calendar](https://github.com/LKI/chinese-calendar)的规则文件把历年假期安排整理成了yaml格式，方便各种语言直接解析使用。
 
-详见[festival_arrangements.yaml](https://github.com/noanti/chinese_holiday/blob/master/chinese_holiday/festival_arrangements.yaml)
+详见[festival_arrangements.yaml](https://github.com/noanti/chinese_holiday/blob/master/chinese_holiday/festival_arrangements.yaml)。
 
 附带了python的解析实现。
 

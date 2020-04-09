@@ -12,7 +12,7 @@ DATA_PATH = path.join(PATH, DATA_FILENAME)
 
 class ChineseHoliday:
     def __init__(self, festivals, arrangements):
-        self.festivals = festivals
+        self.festival_map = {festival['id']: festival['name'] for festival in festivals}
         self.holidays = {}
         self.tiaoxiu = {}
         for arrangement in arrangements:
@@ -36,10 +36,16 @@ class ChineseHoliday:
         return cls(festivals, arrangements)
 
     def is_holiday(self, date):
-        return (True, self.holidays[date]) if date in self.holidays else (False, None)
+        if date in self.holidays:
+            return True, self.festival_map[self.holidays[date]]
+        else:
+            return False, None
 
     def is_tiaoxiu(self, date):
-        return (True, self.tiaoxiu[date]) if date in self.tiaoxiu else (False, None)
+        if date in self.tiaoxiu:
+            return True, self.festival_map[self.tiaoxiu[date]]
+        else:
+            return False, None
 
     def is_rest(self, date):
         if date in self.holidays:
@@ -57,10 +63,10 @@ is_rest = holiday_helper.is_rest
 
 
 if __name__ == '__main__':
-    for i in range(1, 11):
-        date = datetime.datetime(2015, 1, i)
-        print('{} is_holiday: {} is_tiaoxiu: {} is_reset:{}'.format(
-            date, is_holiday(date), is_tiaoxiu(date), is_rest(date)
+    day = datetime.datetime(2018, 12, 27)
+    while day < datetime.datetime(2019, 1, 4):
+        print('{} is_holiday: {} is_tiaoxiu: {} is_rest:{}'.format(
+            day.strftime('%Y-%m-%d'), is_holiday(day), is_tiaoxiu(day), is_rest(day)
         ))
-
+        day = day + datetime.timedelta(days=1)
 

@@ -1,5 +1,6 @@
 ## 中国假期安排
 根据[chinese-calendar](https://github.com/LKI/chinese-calendar)的规则文件把历年假期安排整理成了yaml格式，方便不同语言直接解析使用。
+
 详见[festival_arrangements.yaml](https://github.com/noanti/chinese_holiday/blob/master/chinese_holiday/festival_arrangements.yaml)
 
 附带了python的解析实现。
@@ -23,6 +24,7 @@ from chinese_holiday import is_tiaoxiu, is_rest, is_holiday
 # 五、端午节：6月18日放假，与周末连休。
 # 六、中秋节：9月24日放假，与周末连休。
 # 七、国庆节：10月1日至7日放假调休，共7天。9月29日（星期六）、9月30日（星期日）上班。
+
 holiday, holiday_name = is_holiday(datetime.date(2017, 12, 29))  # False, None
 holiday, holiday_name = is_holiday(datetime.date(2017, 12, 30))  # True, '元旦'
 holiday, holiday_name = is_holiday(datetime.date(2017, 12, 31))  # True, '元旦'
@@ -50,7 +52,8 @@ while day <= datetime.date(2018, 2, 24):
 2018-02-21 is_holiday: (True, '春节') is_tiaoxiu: (False, None) is_rest:True
 2018-02-22 is_holiday: (False, None) is_tiaoxiu: (False, None) is_rest:False
 2018-02-23 is_holiday: (False, None) is_tiaoxiu: (False, None) is_rest:False
-2018-02-24 is_holiday: (False, None) is_tiaoxiu: (True, '春节') is_rest:False```
+2018-02-24 is_holiday: (False, None) is_tiaoxiu: (True, '春节') is_rest:False
+```
 
 ## 注意
 1. 有几年的国庆和中秋假期是相连的，在实际数据分析中区分这两种假的意义不大，也不好区分

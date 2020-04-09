@@ -15,7 +15,7 @@ arrangements:
   - {id: qingming, range: 20200404-20200406, tiaoxiu: []}
   - {id: laodong, range: 20200501-20200505, tiaoxiu: ['20200426', '20200509']}
   - {id: duanwu, range: 20200625-20200627, tiaoxiu: ['20200628']}
-  - {id: guoqing, range: 20201001-20201008, tiaoxiu: ['20201010', '20200927']}
+  - {id: guoqing_zhongqiu, range: 20201001-20201008, tiaoxiu: ['20201010', '20200927']}
   # 2019
   - {id: yuandan, range: 20181230-20190101, tiaoxiu: ['20181229']}
   - {id: chunjie, range: 20190204-20190210, tiaoxiu: ['20190203', '20190202']}
@@ -38,8 +38,7 @@ arrangements:
   - {id: qingming, range: 20170402-20170404, tiaoxiu: ['20170401']}
   - {id: laodong, range: 20170429-20170501, tiaoxiu: []}
   - {id: duanwu, range: 20170528-20170530, tiaoxiu: ['20170527']}
-  - {id: guoqing, range: 20171001-20171008, tiaoxiu: ['20170930']}
-  - {id: zhongqiu, range: 20171004-20171004, tiaoxiu: []}
+  - {id: guoqing_zhongqiu, range: 20171001-20171008, tiaoxiu: ['20170930']}
   # 2016
   - {id: yuandan, range: 20160101-20160103, tiaoxiu: []}
   - {id: chunjie, range: 20160207-20160213, tiaoxiu: ['20160206', '20160214']}
@@ -79,8 +78,7 @@ arrangements:
   - {id: qingming, range: 20120402-20120404, tiaoxiu: ['20120331', '20120401']}
   - {id: laodong, range: 20120429-20120501, tiaoxiu: ['20120428']}
   - {id: duanwu, range: 20120622-20120624, tiaoxiu: []}
-  - {id: zhongqiu, range: 20120929-20120930, tiaoxiu: []}
-  - {id: guoqing, range: 20120930-20121007, tiaoxiu: ['20120929']}
+  - {id: guoqing_zhongqiu, range: 20120930-20121007, tiaoxiu: ['20120929']}
   # 2011
   - {id: yuandan, range: 20110101-20110103, tiaoxiu: []}
   - {id: chunjie, range: 20110202-20110208, tiaoxiu: ['20110130', '20110212']}
@@ -103,8 +101,7 @@ arrangements:
   - {id: qingming, range: 20090404-20090406, tiaoxiu: []}
   - {id: laodong, range: 20090501-20090503, tiaoxiu: []}
   - {id: duanwu, range: 20090528-20090530, tiaoxiu: ['20090531']}
-  - {id: guoqing, range: 20091001-20091008, tiaoxiu: ['20091010', '20090927']}
-  - {id: zhongqiu, range: 20091003-20091004, tiaoxiu: []}
+  - {id: guoqing_zhongqiu, range: 20091001-20091008, tiaoxiu: ['20091010', '20090927']}
   # 2008
   - {id: yuandan, range: 20071230-20080101, tiaoxiu: ['20071229']}
   - {id: chunjie, range: 20080206-20080212, tiaoxiu: ['20080203', '20080202']}

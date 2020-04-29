@@ -1,5 +1,6 @@
 import datetime
 from os import path
+from io import open
 
 import yaml
 
@@ -29,7 +30,7 @@ class ChineseHoliday:
 
     @classmethod
     def load(cls, data_path):
-        with open(data_path) as f:
+        with open(data_path, encoding='utf-8') as f:
             data = yaml.safe_load(f)
         festivals = data['festivals']
         arrangements = data['arrangements']

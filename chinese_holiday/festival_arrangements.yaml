@@ -9,6 +9,14 @@ festivals:
   - {id: guoqing_zhongqiu, name: 国庆+中秋}
   - {id: kangzhan70, name: 中国人民抗日战争暨世界反法西斯战争胜利70周年纪念日}
 arrangements:
+  # 2021
+  - { id: yuandan, range: 20210101-20210101, tiaoxiu: [ ] }
+  - { id: chunjie, range: 20210211-20210217, tiaoxiu: [ '20210207', '20210220'] }
+  - { id: qingming, range: 20210403-20210405, tiaoxiu: [ ] }
+  - { id: laodong, range: 20210501-20210505, tiaoxiu: [ '20210425', '20210508' ] }
+  - { id: duanwu, range: 20210612-20210614, tiaoxiu: [ ] }
+  - { id: zhongqiu, range: 20210919-20210921, tiaoxiu: [ '20210918' ]}
+  - { id: guoqing, range: 20211001-20211007, tiaoxiu: [ '20210926', '20211009' ]}
   # 2020
   - {id: yuandan, range: 20200101-20200101, tiaoxiu: []}
   - {id: chunjie, range: 20200124-20200202, tiaoxiu: ['20200119']}

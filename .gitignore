@@ -1,4 +1,5 @@
 .idea/
 dist/
 *.pyc
+*.iml
 *.egg-info/
